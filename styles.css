@@ -49,6 +49,8 @@ header{
     padding-bottom: 100px;
     padding-top: 100px;
     width: 100%;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
 }
 
 .banner-home{
@@ -66,14 +68,17 @@ header{
 
 
 h1{
-    display: flex;
-    background-color:#00000069;
+    background-color: #00000069;
     color: white;
-    font-size: 65px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    width:100%;
-    justify-content: center;
+    line-height: 1.2;
+    padding: 40px 20px;
+    margin: 0;
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-size: 300%;
 }
 
 h2::before, h2::after{
@@ -159,7 +164,6 @@ hr{
 }
 
 .image{
-    margin-right: 100px;
     flex: 0 1 400px;
     max-width: 100%;
 }
@@ -180,23 +184,106 @@ p{
     font-size: 30px;
 }
 
+.about-us-container{
+    background-color: #31673f40;
+    padding:20px;
+    margin:20px;
+    font-size: 20px;
+}
 
-.about-us p{
-    margin:50px;
+.about-us-image-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width:70%;
 }
 
 .contact-form{
     display: flex;
     justify-content: center;
-
-    width:50%;
+    width:60%;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     margin-top:50px;
     margin-bottom:50px;
     padding:50px;
+    resize: vertical;
 }
+
+label{
+    font-weight: 600;
+    color: #304740;
+}
+
+input[type=text]:focus {
+  background-color:#31673f40;
+}
+
+
+input, textarea{
+    width:100%;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #31673f;
+    max-width: 100%;
+}
+
 
 .form-container{
     display: flex;
     justify-content: center;
+}
+
+input[type=submit] {
+    padding:20px;
+    background-color:#31673f40 ;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px; 
+    font-weight: 600;
+    color: #304740;
+}
+
+input[type=submit]:hover{
+    background-color: #304740;
+    color:white;
+}
+
+.page-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.page-text{
+    background-color:#31673f40;
+    padding: 60px;
+    flex: 1 1 500px;
+    max-width: 800px;
+    margin-left: 50px;
+}
+
+.page-image{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.page-image-cap{
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
