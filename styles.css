@@ -54,15 +54,15 @@ header{
 }
 
 .banner-home{
-    background-image: url("../images/home-banner.jpg");
+    background-image: url("./images/home-banner.jpg");
 }
 
 .banner-about{
-    background-image: url("../images/about-us-banner.jpg");
+    background-image: url("./images/about-us-banner.JPG");
 }
 
 .banner-contact{
-    background-image: url("../images/contact-banner.jpg");
+    background-image: url("./images/contact-banner.jpg");
 }
 
 
